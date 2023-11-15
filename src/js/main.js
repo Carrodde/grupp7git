@@ -1,4 +1,4 @@
-import "../css/style.css";
+/* import "../css/style.css"; */
 import { CPets } from "./models/CPets";
 import "../css/book.css";
 import { createHtmlBook } from "./htmlHelpers";
@@ -44,25 +44,16 @@ for (let i = 0; i < books.length; i++) {
   createHtmlBook(books[i]);
 }
 
-
-
-
-
-
 fetch("https://rickandmortyapi.com/api/character")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
 
-
-
     for (let i = 0; i < 3; i++) {
-
       const randomNumber = Math.floor(Math.random() * data.results.length);
 
-
       const rickContainer = document.createElement("div");
-      rickContainer.className = "rickContainer"
+      rickContainer.className = "rickContainer";
       const nameTag = document.createElement("h1");
       const locationTag = document.createElement("h3");
       const speciesTag = document.createElement("h3");
@@ -70,7 +61,8 @@ fetch("https://rickandmortyapi.com/api/character")
       const image = document.createElement("img");
 
       nameTag.innerHTML = data.results[randomNumber].name;
-      locationTag.innerHTML = "Location: " + data.results[randomNumber].location.name;
+      locationTag.innerHTML =
+        "Location: " + data.results[randomNumber].location.name;
       speciesTag.innerHTML = "Species: " + data.results[randomNumber].species;
       image.src = data.results[randomNumber].image;
 
@@ -81,8 +73,3 @@ fetch("https://rickandmortyapi.com/api/character")
       document.body.appendChild(rickContainer);
     }
   });
-
-
-
-
-
