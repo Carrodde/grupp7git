@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 40%;
+  height: auto;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-left: 30%;
+  background-color: aliceblue;
+}
+
+.title {
+  font-size: 26px;
+  color: burlywood;
+}
+
+.autors {
+  font-size: 20px;
+  color: brown;
+}
+
+.years {
+  font-size: 16px;
+  color: red;
+}
