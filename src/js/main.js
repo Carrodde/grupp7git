@@ -32,6 +32,7 @@ for (let i = 0; i < petsList.length; i++) {
   container.appendChild(infoColor);
   divTag.appendChild(container);
   container.className = "box";
+}
 
 const bok1 = new Book("Jag har testat allt", "David Haroun", 2023);
 const bok2 = new Book("Ödet och hoppet", " Niklas Natt och Dag", 2022);
@@ -41,4 +42,4 @@ const books = [bok1, bok2, bok3];
 
 for (let i = 0; i < books.length; i++) {
   createHtmlBook(books[i]);
-};
+}
